@@ -7,7 +7,7 @@ class Solution {
         int max_health = health;    // 최대체력
         int suc = 0;    // 연속성공 시간
         
-        while(att != attacks.length) {
+        while(att != attacks.length) {    // 몬스터의 공격을 모두 받을 때까지 반복
             if(time == attacks[att][0]) {   // 시간이 몬스터 공격시간과 같으면 공격을 받음
                 health = health - attacks[att][1];
                 att++;
